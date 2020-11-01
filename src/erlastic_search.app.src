@@ -1,10 +1,11 @@
-%% This is the application resource file (.app file) for the erlastic_search,
-%% application.
-{application, erlastic_search, 
-  [{description, "An Erlang app for communicating with Elastic Search's rest interface."},
-   {vsn, "0.2.0"},
-   {modules, []},
-   {registered,[]},
-   {applications, [kernel, stdlib, sasl, gas, ssl, crypto, lhttpc]},
-   {start_phases, []}]}.
-
+{application,erlastic_search,
+             [{description,"An Erlang app for communicating with Elastic Search's rest interface."},
+              {vsn,"git"},
+              {modules,[]},
+              {registered,[]},
+              {applications,[kernel,stdlib,ssl,hackney]},
+              {start_phases,[]},
+              {maintainers,["Tristan Sloughter"]},
+              {licenses,["LGPL"]},
+              {links,[{"Github",
+                       "https://github.com/tsloughter/erlastic_search"}]}]}.
